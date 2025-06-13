@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+/*header*/
+
+header {
+  background-color: #070e16;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/*hero*/
+
+.hero {
+  background-image: url("images/hero-background1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  text-align: left;
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 4%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e60000;
+}
+
+/*about*/
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  padding-right: 50px;
+  color: #fff;
+  margin-left: 5%;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  max-width: 50%;
+  margin-right: 5%;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.dark-theme {
+  background-color: #070e16;
+}
+
+/* Footer*/
+
+.footer {
+  background-color: #070e16;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/* Menu */
+
+.menu {
+  width: 100%;
+  padding: 70px 0;
+  background: snow;
+}
+
+.menu h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.menu .menu_box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card {
+  width: 325px;
+  height: 380px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu_box .menu_card .menu_image {
+  width: 300px;
+  height: 245px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img {
+  transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .menu_info h2 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 25px;
+  color: #fac031;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inp {
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: #fac031;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+  width: 160px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: #000;
+  padding: 8px 10px;
+  margin: 0 80px;
+  transition: 0.3s;
+}
+
+.custom-button {
+  background-color: #4caf50; /* Green background */
+  border: none; /* Remove borders */
+  color: black; /* White text */
+  padding: 20px 50px; /* Some padding */
+  text-align: center; /* Centered text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Get elements to line up horizontally */
+  font-size: 25px; /* Increase font size */
+  margin: 4px 2px; /* Some space around the button */
+  cursor: pointer; /* Pointer/hand icon on hover */
+  border-radius: 12px; /* Rounded corners */
+  /* transition: background-color 0.3s; Animation for background color change */
+  font-family: "Times New Roman", Times, serif;
+  margin: top;
+}
+
+.custom-button:hover {
+  background-color: cyan; /* Darker green on hover */
+}
+
+/*Gallary*/
+
+.gallary {
+  width: 100%;
+  padding: 70px 0;
+  background: #070e16;
+}
+
+.gallary h1 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallary h1 span {
+  margin-left: 15px;
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallary .gallary_image_box {
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.gallary .gallary_image_box .gallary_image img {
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 40px;
+}
+
+/*Order*/
+
+.order {
+  width: 100%;
+  height: 100vh;
+  padding: 70px 0;
+  background-color: lightyellow;
+}
+
+.order h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fac031;
+  font-size: 55px;
+}
+
+.order h1 span {
+  color: gray;
+  margin-right: 15px;
+  font-family: mv boli;
+}
+
+.order h1 span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #fac031;
+  display: block;
+  position: relative;
+  bottom: 15px;
+}
+
+.order .order_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.order .order_main .order_image img {
+  width: 350px;
+}
+
+.order .order_main form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 10px;
+}
+
+.order .order_main form .input p {
+  line-height: 25px;
+  color: black;
+}
+
+.order .order_main form .input {
+  margin: 5px;
+}
+
+.order .order_main form .input input {
+  width: 300px;
+  height: 35px;
+  padding: 0 10px;
+  border: 2px solid #cccccc;
+  background: #eeeeee;
+  outline: none;
+  border-radius: 3px;
+}
+
+.order .order_main form .input input:focus {
+  border: 2px solid #fac031;
+}
+
+.order .order_main form .order_btn {
+  padding: 10px 0;
+  background: gray;
+  color: black;
+  width: 200%;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
